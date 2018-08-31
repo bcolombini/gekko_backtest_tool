@@ -25,13 +25,6 @@ def parse_toml_file():
             toml_dict.update({strategy_name:result})
     return toml_dict
 
-def parse_the_toml_array(array):
-    toml_dict = dict()
-    for arr in array:
-        obj = arr.replace(" ","").split("=")
-        toml_dict.update({obj[0]:obj[1]})
-    return toml_dict
-
 def create_post_request():
     
     toml_arr = {}
