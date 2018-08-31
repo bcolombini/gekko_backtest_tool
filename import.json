@@ -1,0 +1,16 @@
+{
+    "watch":{
+    "exchange":"poloniex",
+    "currency":"BTC",
+    "asset":"1CR"
+    },
+    "importer":{
+        "daterange":{
+            "from":"2018-07-31 21:53",
+            "to":"2018-08-31 21:53"
+        }
+    },
+    "candleWriter":{
+        "enabled":true
+    }
+}

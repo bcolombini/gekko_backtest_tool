@@ -1,0 +1,8 @@
+{
+    "tradingAdvisor": {
+        "enabled": true,
+        "method": "XXX",
+        "candleSize": 60,
+        "historySize": 10
+    }
+}

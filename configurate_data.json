@@ -1,0 +1,41 @@
+{
+	"watch": {
+		"exchange": "poloniex",
+		"currency": "USDT",
+		"asset": "BTC"
+	},
+	"paperTrader": {
+		"feeMaker": 0.25,
+		"feeTaker": 0.25,
+		"feeUsing": "maker",
+		"slippage": 0.05,
+		"simulationBalance": {
+			"asset": 0.2,
+			"currency": 100
+		},
+		"reportRoundtrips": true,
+		"enabled": true
+	},
+	"backtest": {
+		"daterange": {
+			"from": "2018-08-20T22:43:00Z",
+			"to": "2018-08-31T00:36:00Z"
+		}
+	},
+	"backtestResultExporter": {
+		"enabled": true,
+		"writeToDisk": false,
+		"data": {
+			"stratUpdates": false,
+			"roundtrips": true,
+			"stratCandles": true,
+			"stratCandleProps": ["open"],
+			"trades": true
+		}
+	},
+	"performanceAnalyzer": {
+		"riskFreeReturn": 2,
+		"enabled": true
+	},
+	"valid": true
+}
