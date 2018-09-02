@@ -1,0 +1,57 @@
+{
+	"valid": true,
+	"performanceAnalyzer": {
+		"enabled": true,
+		"riskFreeReturn": 2
+	},
+    "watch": {
+		"currency": "BTC",
+		"asset": "DCR",
+		"exchange": "poloniex"
+	},
+    "backtestResultExporter": {
+		"data": {
+			"stratCandles": true,
+			"stratCandleProps": ["open"],
+			"roundtrips": true,
+			"trades": true,
+			"stratUpdates": false
+		},
+		"enabled": true,
+		"writeToDisk": false
+	},
+	"tradingAdvisor": {
+		"historySize": 10,
+		"enabled": true,
+		"method": "MACD",
+		"candleSize": 60
+	},
+	"paperTrader": {
+		"feeTaker": 0.25,
+		"enabled": true,
+		"simulationBalance": {
+			"currency": 100,
+			"asset": 1
+		},
+		"feeMaker": 0.25,
+		"feeUsing": "maker",
+		"slippage": 0.05,
+		"reportRoundtrips": true
+	},
+	"backtest": {
+		"daterange": {
+			"to": "2018-08-31T01:43:00Z",
+			"from": "2018-05-30T22:43:00Z"
+		}
+	},
+	"MACD": {
+		"signal": 9,
+		"short": 10,
+        "thresholds":{
+			"down": -0.025,
+			"up": 0.025,
+			"persistence": 1
+        },
+		"long": 21
+	}
+}
