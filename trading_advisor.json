@@ -2,7 +2,7 @@
     "tradingAdvisor": {
         "enabled": true,
         "method": "XXX",
-        "candleSize": 60,
-        "historySize": 10
+        "candleSize": 15,
+        "historySize": 1
     }
 }
